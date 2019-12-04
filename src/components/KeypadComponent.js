@@ -6,7 +6,7 @@ const KeyPadComponent = props => {
       <button className="clear" name="CE" onClick={props.clearresult}>
         CE
       </button>
-      <button name="/" onClick={e => props.setValue(e.target.name)}>
+      <button className="symbol" name="/" onClick={e => props.setValue(e.target.name)}>
         ÷
       </button>
       <br />
@@ -20,7 +20,7 @@ const KeyPadComponent = props => {
       <button name="9" onClick={e => props.setValue(e.target.name)}>
         9
       </button>
-      <button name="-" onClick={e => props.setValue(e.target.name)}>
+      <button className="symbol" name="-" onClick={e => props.setValue(e.target.name)}>
         -
       </button>
       <br />
@@ -34,7 +34,7 @@ const KeyPadComponent = props => {
       <button name="6" onClick={e => props.setValue(e.target.name)}>
         6
       </button>
-      <button name="+" onClick={e => props.setValue(e.target.name)}>
+      <button className="symbol" name="+" onClick={e => props.setValue(e.target.name)}>
         +
       </button>
       <br />
@@ -48,7 +48,7 @@ const KeyPadComponent = props => {
       <button name="3" onClick={e => props.setValue(e.target.name)}>
         3
       </button>
-      <button name="=" onClick={props.setResultHandler}>
+      <button className="symbol" name="=" onClick={props.setResultHandler}>
         =
       </button>
       <br />

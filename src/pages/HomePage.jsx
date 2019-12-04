@@ -3,6 +3,7 @@ import React, { Component, useState, useEffect } from 'react'
 import KeypadComponent from '../components/KeypadComponent'
 import ResultComponent from '../components/ResultComponent'
 
+
 const HomePage = () => {
   const [Result, SetResult] = useState([])
   const [NumbersClicked, SetNumberClicked] = useState([])
@@ -33,7 +34,11 @@ const clearresult = () => {
 
   return (
     <div>
-      <ResultComponent result={Result} />
+      
+      <ResultComponent 
+        result={Result}
+        NumbersClicked={NumbersClicked}
+       />
       <KeypadComponent
         setValue={setValue}
         setResultHandler={setResultHandler}
